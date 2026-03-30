@@ -128,6 +128,7 @@ const projects = [
 const certificates = [
     {title:"DICT", img:"images/dict1.png"},
     {title:"IBM", img:"images/ibm1.png"},
+    {title:"DICT", img:"images/dict2.png"},
 ];
 
 const techStackData = [

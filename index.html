@@ -7,18 +7,21 @@
 <link rel="stylesheet" href="style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Orbitron:wght@500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link rel="icon" type="image/png" href="images/logoicon.png">
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-
 
 <div id="loader-wrapper">
     <div class="smoke-explosion pink-smoke"></div>
     <div class="smoke-explosion purple-smoke"></div>
     <div class="smoke-explosion blue-smoke"></div>
+    <div class="smoke-explosion pink-smoke" style="top:30%;left:20%"></div>
+    <div class="smoke-explosion purple-smoke" style="top:70%;left:75%"></div>
+    <div class="smoke-explosion blue-smoke" style="top:20%;left:60%"></div>
+    <div class="loader-shockwave" id="shockwave1"></div>
+    <div class="loader-shockwave" id="shockwave2"></div>
     <div class="loader-content">
         <div class="loader-icons">
             <i class="fas fa-code"></i>
@@ -27,12 +30,11 @@
         </div>
         <h1 class="loader-text">Welcome To My <br> <span>Portfolio Website</span></h1>
         <div class="loader-subtext">
-            <span id="loader-typing"></span><span class="loader-cursor">|</span>
+            <span id="loader-typing"></span><span class="loader-cursor"></span>
         </div>
     </div>
 </div>
 
-<!-- Grid Overlay -->
 <div class="grid-overlay"></div>
 
 <!-- Navbar -->
@@ -44,27 +46,43 @@
         <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
         <li class="nav-item"><a href="#contact">Contact</a></li>
     </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+    </button>
 </nav>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav" id="mobile-nav">
+    <a href="#home" onclick="closeMobileNav()">Home</a>
+    <a href="#about" onclick="closeMobileNav()">About</a>
+    <a href="#portfolio" onclick="closeMobileNav()">Portfolio</a>
+    <a href="#contact" onclick="closeMobileNav()">Contact</a>
+</div>
 
 <!-- Hero Section -->
 <section id="home" class="hero">
     <div class="hero-left">
-        <div class="badge">✨ Ready to Innovate</div>
-        <h1>Junior Full Stack <br> <span class="accent-text">Developer</span></h1>
-        <h2 class="typing-container"><span id="type-target"></span><span class="cursor">|</span></h2>
-        <p class="description">Creating Innovative, Functional, and User-Friendly Websites for Digital Solutions.</p>
-        <div class="tech-stack"><span>React</span><span>Javascript</span><span>Node.js</span><span>Tailwind</span></div>
-        <div class="cta-group">
+        <div class="badge fade-in-up">
+            <span class="badge-dot"></span>
+            <span class="badge-text">Available for Work</span>
+            <span class="badge-line"></span>
+            <span class="badge-sub">Full Stack Dev</span>
+        </div>
+        <h1 class="fade-in-up delay-1">Junior Full Stack <br> <span class="accent-text">Developer</span></h1>
+        <h2 class="typing-container fade-in-up delay-2"><span id="type-target"></span><span class="cursor">|</span></h2>
+        <p class="description fade-in-up delay-3">Creating Innovative, Functional, and User-Friendly Websites for Digital Solutions.</p>
+        <div class="tech-stack fade-in-up delay-3"><span>React</span><span>Javascript</span><span>Node.js</span><span>Tailwind</span></div>
+        <div class="cta-group fade-in-up delay-4">
             <a href="#portfolio" class="btn btn-primary">Projects <i class="fas fa-external-link-alt"></i></a>
             <a href="#contact" class="btn btn-secondary">Contact <i class="far fa-envelope"></i></a>
         </div>
-        <div class="social-icons">
+        <div class="social-icons fade-in-up delay-5">
             <a href="https://github.com/Howl-dotcom" class="icon-box"><i class="fab fa-github"></i></a>
             <a href="https://www.facebook.com/howldotcom/" class="icon-box"><i class="fab fa-facebook"></i></a>
             <a href="https://www.instagram.com/howldtcom/" class="icon-box"><i class="fab fa-instagram"></i></a>
         </div>
     </div>
-    <div class="hero-right">
+    <div class="hero-right fade-in-right">
         <img src="images/owllogo.gif" alt="Owl logo illustration">
     </div>
 </section>
@@ -72,17 +90,19 @@
 <!-- About Section -->
 <section id="about" class="about-section">
     <div class="about-header">
-        <h2 class="section-title">About Me</h2>
-        <p class="tagline">
-            <span class="custom-star"></span> Transforming ideas into digital experiences <span class="custom-star"></span>
-        </p>
+        <h2 class="section-title fade-in-up">About Me</h2>
+        <div class="about-tagline fade-in-up delay-1">
+            <span class="tagline-bar"></span>
+            <p class="tagline-text">Transforming ideas into digital experiences</p>
+            <span class="tagline-bar"></span>
+        </div>
     </div>
     <div class="about-main-container">
-        <div class="about-text-content">
+        <div class="about-text-content fade-in-left">
             <h3 class="greeting">Hello, I'm</h3>
             <h1 class="name">John Mhel R. Rojas</h1>
             <p class="bio">
-                I'm an Information Systems student at Catanduanes State University specializing in Full-Stack Development. 
+                I'm an Information Systems student at Catanduanes State University specializing in Full-Stack Development.
                 I focus on building innovative, high-end digital solutions that prioritize user experience.
             </p>
             <div class="quote-container"><p>"Leveraging AI as a professional tool, not a replacement."</p></div>
@@ -91,29 +111,34 @@
                 <a href="#portfolio" class="btn-outline">View Projects</a>
             </div>
         </div>
-        <div class="hero-image">
+        <div class="hero-image fade-in-right">
             <img src="images/logoicon.png" alt="John Mhel R. Rojas">
         </div>
     </div>
     <div class="stats-row">
-        <div class="stat-item"><span class="stat-val">9</span><span class="stat-desc">TOTAL PROJECTS</span></div>
-        <div class="stat-item"><span class="stat-val">5</span><span class="stat-desc">CERTIFICATES</span></div>
-        <div class="stat-item"><span class="stat-val">1.5</span><span class="stat-desc">YEARS EXP.</span></div>
+        <div class="stat-item fade-in-scale delay-1"><span class="stat-val">9</span><span class="stat-desc">TOTAL PROJECTS</span></div>
+        <div class="stat-item fade-in-scale delay-2"><span class="stat-val">5</span><span class="stat-desc">CERTIFICATES</span></div>
+        <div class="stat-item fade-in-scale delay-3"><span class="stat-val">1.5</span><span class="stat-desc">YEARS EXP.</span></div>
     </div>
 </section>
 
 <!-- Portfolio Section -->
 <section id="portfolio" class="portfolio-section">
     <div class="portfolio-header">
-        <h2 class="section-title">Portfolio Showcase</h2>
-        <p class="portfolio-tagline">Explore my journey through projects, certifications, and technical expertise. Each section represents a milestone in my continuous learning path.</p>
+        <h2 class="section-title fade-in-up">Portfolio Showcase</h2>
+        <div class="section-tagline fade-in-up delay-1">
+            <span class="tagline-bar"></span>
+            <p class="tagline-text">Explore my journey through projects, certifications, and technical expertise</p>
+            <span class="tagline-bar"></span>
+        </div>
     </div>
-    <div class="portfolio-tabs">
+    <div class="portfolio-tabs fade-in-up delay-2" id="portfolio-tabs">
+        <div class="tab-slider" id="tab-slider"></div>
         <div class="tab active" onclick="switchTab('projects', this)"><i class="fas fa-code"></i><span>Projects</span></div>
         <div class="tab" onclick="switchTab('certificates', this)"><i class="fas fa-award"></i><span>Certificates</span></div>
         <div class="tab" onclick="switchTab('tech-stack', this)"><i class="fas fa-layer-group"></i><span>Tech Stack</span></div>
     </div>
-    <div class="tab-content-wrapper">
+    <div class="tab-content-wrapper fade-in-up delay-3">
         <div id="projects-view" class="view active"><div class="project-grid" id="project-grid"></div></div>
         <div id="certificates-view" class="view"><div class="cert-grid" id="cert-grid"></div></div>
         <div id="tech-stack-view" class="view"><div class="tech-grid" id="tech-grid"></div></div>
@@ -123,71 +148,195 @@
         <img class="modal-content" id="full-cert-img">
     </div>
     <div id="see-more-container" class="see-more-container">
-        <button id="see-more-btn" class="see-more-btn">See More <i class="fas fa-chevron-down"></i></button>
+        <button id="see-more-btn" class="see-more-btn">
+            <span id="see-more-label">See More</span>
+            <i id="see-more-icon" class="fas fa-chevron-down"></i>
+        </button>
+    </div>
+</section>
+
+<!-- Pixode Philippines Section -->
+<section id="pixode" class="pixode-section">
+    <div class="pixode-header">
+        <p class="pixode-eyebrow fade-in-up"><span class="pixode-dot"></span> MEMBER</p>
+        <h2 class="section-title fade-in-up delay-1">Part of Something Bigger</h2>
+    </div>
+
+    <div class="pixode-card fade-in-scale delay-2">
+        <div class="pixode-glow"></div>
+
+        <div class="pixode-identity fade-in-up delay-2">
+            <div class="pixode-logo-wrapper">
+                <img src="images/pixode-ph.jpg" alt="Pixode Philippines Logo" class="pixode-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                <div class="pixode-logo-placeholder">
+                    <i class="fas fa-image"></i>
+                </div>
+            </div>
+            <h3 class="pixode-name">PIXODE Philippines</h3>
+            <p class="pixode-tagline">One Digital World</p>
+            <p class="pixode-desc">Creating cutting-edge digital solutions and gaming ecosystems since inception.</p>
+        </div>
+
+        <div class="pixode-divider fade-in-up delay-3"></div>
+
+        <div class="pixode-services fade-in-up delay-3">
+            <h4 class="pixode-services-title"><i class="fas fa-layer-group"></i> Services We Serve</h4>
+            <div class="pixode-services-grid">
+                <div class="pixode-service-item">
+                    <span class="pixode-check"><i class="fas fa-check"></i></span>
+                    <span>Web & Game Development</span>
+                </div>
+                <div class="pixode-service-item">
+                    <span class="pixode-check"><i class="fas fa-check"></i></span>
+                    <span>UI/UX Design</span>
+                </div>
+                <div class="pixode-service-item">
+                    <span class="pixode-check"><i class="fas fa-check"></i></span>
+                    <span>FiveM / GTAV Server</span>
+                </div>
+                <div class="pixode-service-item">
+                    <span class="pixode-check"><i class="fas fa-check"></i></span>
+                    <span>Mobile Apps</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="pixode-badge fade-in-up delay-4">
+            <i class="fas fa-user-check"></i> Devops
+        </div>
     </div>
 </section>
 
 <!-- Project Details Section -->
 <section id="project-details-view" class="details-view" style="display: none;">
+    <div class="details-overlay-bg"></div>
     <div class="details-container">
+
+        <!-- Top nav bar -->
         <div class="details-nav">
-            <button onclick="hideProjectDetails()" class="back-btn"><i class="fas fa-arrow-left"></i> Back</button>
-            <span class="breadcrumb">Projects > <span id="detail-breadcrumb-title"></span></span>
-        </div>
-        <div class="details-main-grid">
-            <div class="details-content-left">
-                <h1 id="detail-title"></h1>
-                <div class="purple-line"></div>
-                <p id="detail-description" class="project-desc-text"></p>
-                <div class="stats-row">
-                    <div class="stat-item"><i class="fas fa-code"></i><span><strong id="detail-tech-count">0</strong> Total Technology</span></div>
-                    <div class="stat-item"><i class="fas fa-layer-group"></i><span><strong id="detail-feature-count">0</strong> Key Features</span></div>
-                </div>
-                <div class="btn-group">
-                    <a href="#" id="detail-live-link" class="btn-primary-glow"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                    <a href="#" id="detail-github-link" class="btn-secondary-outline"><i class="fab fa-github"></i> GitHub</a>
-                </div>
-                <h3><i class="fas fa-terminal"></i> Technologies Used</h3>
-                <div id="detail-tech-tags" class="tech-tags-flex"></div>
-            </div>
-            <div class="details-content-right">
-                <div class="main-image-wrapper"><img id="detail-main-img" src="" alt="Preview"></div>
-                <div class="features-card">
-                    <h3><i class="fas fa-star"></i> Key Features</h3>
-                    <ul id="detail-features-list"></ul>
-                </div>
+            <button onclick="hideProjectDetails()" class="back-btn">
+                <i class="fas fa-arrow-left"></i> Back to Projects
+            </button>
+            <div class="breadcrumb">
+                <span class="bc-parent">Portfolio</span>
+                <i class="fas fa-chevron-right bc-sep"></i>
+                <span class="bc-parent">Projects</span>
+                <i class="fas fa-chevron-right bc-sep"></i>
+                <span id="detail-breadcrumb-title" class="bc-current"></span>
             </div>
         </div>
+
+        <!-- Hero strip -->
+        <div class="detail-hero-strip">
+            <div class="detail-hero-img-wrap">
+                <img id="detail-main-img" src="" alt="Project Preview">
+                <div class="detail-img-shine"></div>
+            </div>
+            <div class="detail-hero-overlay">
+                <div class="detail-status-bar">
+                    <span class="detail-status-dot"></span>
+                    <span class="detail-status-text">Live Project</span>
+                </div>
+                <h1 id="detail-title" class="detail-title"></h1>
+                <p id="detail-description" class="detail-desc"></p>
+                <div class="detail-cta-row">
+                    <a href="#" id="detail-live-link" class="detail-btn-primary" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
+                    <a href="#" id="detail-github-link" class="detail-btn-ghost" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stats row -->
+        <div class="detail-stats-strip">
+            <div class="detail-stat">
+                <i class="fas fa-code"></i>
+                <div>
+                    <span class="ds-val" id="detail-tech-count">0</span>
+                    <span class="ds-label">Technologies</span>
+                </div>
+            </div>
+            <div class="detail-stat-divider"></div>
+            <div class="detail-stat">
+                <i class="fas fa-star"></i>
+                <div>
+                    <span class="ds-val" id="detail-feature-count">0</span>
+                    <span class="ds-label">Key Features</span>
+                </div>
+            </div>
+            <div class="detail-stat-divider"></div>
+            <div class="detail-stat">
+                <i class="fas fa-layer-group"></i>
+                <div>
+                    <span class="ds-val">Active</span>
+                    <span class="ds-label">Status</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom two columns -->
+        <div class="detail-body-grid">
+            <div class="detail-col">
+                <div class="detail-section-card">
+                    <h3 class="detail-card-title">
+                        <span class="detail-card-icon"><i class="fas fa-terminal"></i></span>
+                        Technologies Used
+                    </h3>
+                    <div id="detail-tech-tags" class="detail-tech-tags"></div>
+                </div>
+            </div>
+            <div class="detail-col">
+                <div class="detail-section-card">
+                    <h3 class="detail-card-title">
+                        <span class="detail-card-icon"><i class="fas fa-list-check"></i></span>
+                        Key Features
+                    </h3>
+                    <ul id="detail-features-list" class="detail-features-list"></ul>
+                </div>
+            </div>
+        </div>
+
     </div>
 </section>
 
 <!-- Contact Section -->
 <section id="contact" class="contact-section">
     <div class="contact-header">
-        <h1 class="section-title">Contact me</h1>
-        <p class="section-subtitle">Have a question? Send me a message, and I'll get back to you right away.</p>
+        <h1 class="section-title fade-in-up">Contact me</h1>
+        <div class="section-tagline fade-in-up delay-1">
+            <span class="tagline-bar"></span>
+            <p class="tagline-text">Have a question? Send me a message and I'll get back to you</p>
+            <span class="tagline-bar"></span>
+        </div>
     </div>
-    <div class="contact-grid">
+    <div class="contact-grid fade-in-up delay-2">
         <div class="contact-card-main">
-            <div class="card-header">
-                <h2>Contact <i class="fas fa-share-alt share-icon"></i></h2>
-                <p>Anything you'd like to discuss? Send me a message and let's talk.</p>
-            </div>
+                <div class="card-header">
+                    <h2>Contact <i class="fas fa-share-alt share-icon"></i></h2>
+                    <div class="card-tagline">
+                        <span class="tagline-bar short"></span>
+                        <p class="tagline-text sm">Anything you'd like to discuss? Let's talk.</p>
+                        <span class="tagline-bar short"></span>
+                    </div>
+                </div>
             <form id="contact-form">
-    <div class="input-group">
-        <i class="far fa-user"></i>
-        <input type="text" name="user_name" placeholder="Your name" required>
-    </div>
-    <div class="input-group">
-        <i class="far fa-envelope"></i>
-        <input type="email" name="user_email" placeholder="Your Email" required>
-    </div>
-    <div class="input-group">
-        <i class="far fa-comment-dots"></i>
-        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-    </div>
-    <button type="submit" class="send-btn"><i class="fas fa-paper-plane"></i> Send message</button>
-</form>
+                <div class="input-group">
+                    <i class="far fa-user"></i>
+                    <input type="text" name="user_name" placeholder="Your name" required>
+                </div>
+                <div class="input-group">
+                    <i class="far fa-envelope"></i>
+                    <input type="email" name="user_email" placeholder="Your Email" required>
+                </div>
+                <div class="input-group">
+                    <i class="far fa-comment-dots"></i>
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="send-btn"><i class="fas fa-paper-plane"></i> Send message</button>
+            </form>
             <div class="connect-with-me">
                 <div class="divider"><span>Connect With Me</span></div>
                 <div class="social-links-grid">
@@ -217,20 +366,15 @@
     </div>
 </section>
 
-<!-- Smoke -->
 <div class="big-mist"></div>
 <div id="smoke-container"></div>
 
-<!-- Scripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="https://unpkg.com/scrollreveal"></script>
 
 <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script type="text/javascript">
-   (function(){
-      emailjs.init("jB5v8S9HFsHjzhRpy"); wTk4X0VEeFrcieCrS
-   })();
+   (function(){ emailjs.init("jB5v8S9HFsHjzhRpy"); })();
 </script>
 <script src="script.js"></script>
 </body>

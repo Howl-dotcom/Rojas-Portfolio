@@ -124,11 +124,11 @@ const projects = [
     {
         id: "p1",
         title: "CafeLupe Website",
-        description: "A premium reservation platform for CafeLupe.",
+        description: "A reservation platform that i Designed for CafeLupe.",
         image: "images/cafelupe.png",
         techStack: ["ReactJS", "Tailwind"],
         features: ["Info Page", "Gallery"],
-        liveLink: "#",
+        liveLink: "https://www.figma.com/make/852ljl5ck2xztvsxippW98/Cafe-Lupe-Antipolo-Landing-Page?t=4OLVy7EHRRJdFwPn-1",
         githubLink: "#"
     },
     {

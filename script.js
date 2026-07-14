@@ -142,6 +142,16 @@ const projects = [
         githubLink: "https://github.com/Howl-dotcom/pawikan-care"
     },
     {
+        id: "p11",
+        title: "Little Bliss Cafe",
+        description: "Little Bliss Café is a single-page website for a cakes-and-coffee shop in Bato, Catanduanes. It shows the café's story, menu categories, hours, location, and contact info, all styled around the shop's actual rose-and-maroon branding. Its standout feature is The Bliss Wall — a public photo gallery where any visitor can upload a photo from their trip, shown instantly as pinned Polaroids on a corkboard-style wall, with the option to delete a post. Built as a single responsive HTML page, with photo storage handled by Supabase so it works once hosted online (e.g. GitHub Pages).",
+        image: "images/little.png",
+        techStack: ["HTML", "CSS","JAVASCRIPT"],
+        features: ["Photo Gallery", "Smooth Scroll"],
+        liveLink: "https://howl-dotcom.github.io/little-bliss-cafe/",
+        githubLink: "https://github.com/Howl-dotcom/little-bliss-cafe.git"
+    },
+    {
         id: "p3",
         title: "Caffè Aura",
         description: "A high-end 3D coffee shop experience with interactive elements.",

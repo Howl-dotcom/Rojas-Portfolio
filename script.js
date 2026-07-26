@@ -152,6 +152,16 @@ const projects = [
         githubLink: "https://github.com/Howl-dotcom/little-bliss-cafe.git"
     },
     {
+        id: "p12",
+        title: "Catanduanes Fixed Gear",
+        description: "Custom Website for the Community for CFG (Catanduanes Fixed Gear.",
+        image: "images/CFG.png",
+        techStack: ["HTML", "CSS", "JSScript"],
+        features: ["Community Gallery", "Smooth Scroll"],
+        liveLink: " https://howl-dotcom.github.io/Catanduanes-Fixed-Gear/",
+        githubLink: "https://github.com/Howl-dotcom/Catanduanes-Fixed-Gear#"
+    },
+    {
         id: "p3",
         title: "Caffè Aura",
         description: "A high-end 3D coffee shop experience with interactive elements.",

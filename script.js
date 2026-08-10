@@ -128,7 +128,7 @@ const projects = [
         image: "images/cafelupe.png",
         techStack: ["ReactJS", "Tailwind"],
         features: ["Info Page", "Gallery"],
-        liveLink: "cafe-lupe-antipolo.vercel.app",
+        liveLink: "https://cafe-lupe-antipolo.vercel.app/",
         githubLink: "https://github.com/Howl-dotcom/cafe-lupe-antipolo"
     },
     {

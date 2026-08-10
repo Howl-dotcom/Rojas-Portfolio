@@ -128,8 +128,8 @@ const projects = [
         image: "images/cafelupe.png",
         techStack: ["ReactJS", "Tailwind"],
         features: ["Info Page", "Gallery"],
-        liveLink: "https://www.figma.com/make/852ljl5ck2xztvsxippW98/Cafe-Lupe-Antipolo-Landing-Page?t=4OLVy7EHRRJdFwPn-1",
-        githubLink: "#"
+        liveLink: "cafe-lupe-antipolo.vercel.app",
+        githubLink: "https://github.com/Howl-dotcom/cafe-lupe-antipolo"
     },
     {
         id: "p2",
